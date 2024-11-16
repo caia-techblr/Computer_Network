@@ -48,7 +48,6 @@ This course introduces the principles of computer networking, covering key topic
 - Secure Sockets Layer (SSL)
   - Basics and use cases
 - HTTPS: Securing web traffic
-- Hands-on with certificate setup
 - Best practices for secure network communication
 
 ---
