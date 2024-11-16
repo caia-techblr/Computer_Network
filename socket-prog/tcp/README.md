@@ -18,7 +18,7 @@
 #### Python Examples
 * [Simple TCP Server](server/tcp-server.py)
 * [TCP Server using with block](server/tcp-server-with.py)
-* [TCP Server as class](server/tcp-server-classhyuj.py)
+* [TCP Server as class](server/tcp-server-class.py)
 * [TCP Client](client/tcp-client.py)
 * [Select Demo](select/select-demo.py)
 
