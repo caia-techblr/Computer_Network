@@ -6,6 +6,16 @@
 * sendto
 * recvfrom
 
+### Examples
+
+#### C Examples
+* [UDP Receiver](udp-receiver.c)
+* [UDP Sender](udp-sender.c)
+
+#### Python Examples
+* [UDP Receiver](udp-rcvr.py)
+* [UDP Sender](udp-sender.py)
+
 ### Activity-1
 * Run UDP Receiver on port no : 1800
 * Receiver will echo back message transmitted by sender
