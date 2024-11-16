@@ -1,4 +1,4 @@
-# Computer Network Course Syllabus
+# Computer Network 
 
 ## Course Overview
 This course introduces the principles of computer networking, covering key topics such as network protocols, simulation tools, and security measures. This will help to gain hands-on experience with tools like Cisco Packet Tracer and Wireshark, socket programming, and explore networking concepts essential for modern systems.
