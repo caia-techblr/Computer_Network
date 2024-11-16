@@ -9,6 +9,19 @@
 * send
 * recv
 
+### Examples
+
+#### C Examples
+* [TCP Server](server/tcp-server.c)
+* [TCP Client](client/tcp-client.py)
+* [Select Demo](select/select-demo.c)
+#### Python Examples
+* [Simple TCP Server](server/tcp-server.py)
+* [TCP Server using with block](server/tcp-server-with.py)
+* [TCP Server as class](server/tcp-server-classhyuj.py)
+* [TCP Client](client/tcp-client.py)
+* [Select Demo](select/select-demo.py)
+
 ### Activity-1
 * Run TCP Server on port no : 1800
 * Server will echo back message sent by client
