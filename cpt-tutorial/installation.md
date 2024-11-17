@@ -12,7 +12,7 @@ This guide provides step-by-step instructions to download, install, and configur
 
 2. **Download the Installer**:
    - Log in to your Cisco Networking Academy account.
-   - Navigate to the "Resources" or "Packet Tracer" section.
+   - Navigate to the "Resources" or "Packet Tracer" section. [CPT Download](https://www.netacad.com/resources/lab-downloads?courseLang=en-US)
    - Select the appropriate version for your operating system:
      - **Windows**: `.exe`
      - **macOS**: `.dmg`
