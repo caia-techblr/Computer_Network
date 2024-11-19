@@ -14,12 +14,14 @@ if(ssd<0) {
 ```
 uint16_t sport = 1500;
 struct sockaddr_in  saddr;
+
 //bzero(&saddr, sizeof(addr));
 saddr.sin_family = AF_INET;
 saddr.sin_port = htons(sport);
 //saddr.sin_addr = inet_addr("127.0.0.1");
 saddr.sin_addr = INADDR_ANY;
 bzero(&saddr.sin_zero, sizeof(saddr.sin_zero);
+
 ret=bind(ssd, (struct sockaddr*) &sddr,sizeof(struct sockaddr_in));
 if(ret<0) {
 	perror("bind");
