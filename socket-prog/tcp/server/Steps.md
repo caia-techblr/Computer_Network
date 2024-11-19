@@ -12,6 +12,7 @@ if(ssd<0) {
 #### Step-2 : Bind to certain IP Address & fixed Port number
 
 ```
+uint16_t sport = 1500;
 struct sockaddr_in  saddr;
 //bzero(&saddr, sizeof(addr));
 saddr.sin_family = AF_INET;
