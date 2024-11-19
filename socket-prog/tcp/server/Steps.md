@@ -19,10 +19,10 @@ struct sockaddr_in  saddr;
 saddr.sin_family = AF_INET;
 saddr.sin_port = htons(sport);
 //saddr.sin_addr = inet_addr("127.0.0.1");
-saddr.sin_addr = INADDR_ANY;
-bzero(&saddr.sin_zero, sizeof(saddr.sin_zero);
+saddr.sin_addr.s_addr = INADDR_ANY;
+bzero(&saddr.sin_zero, sizeof(saddr.sin_zero));
 
-ret=bind(ssd, (struct sockaddr*) &sddr,sizeof(struct sockaddr_in));
+ret=bind(ssd, (struct sockaddr*) &saddr,sizeof(struct sockaddr_in));
 if(ret<0) {
 	perror("bind");
 	exit(2);
