@@ -45,7 +45,7 @@ if(ret<0) {
 int backlog=3;
 ret = listen(ssd,backlog);
 if(ret<0) {
-	perror("listen");
+    perror("listen");
 }
 ```
 
@@ -55,9 +55,9 @@ int csd;
 struct sockaddr_in caddr;
 socklen_t len=0;
 csd = accept(ssd,  (struct sockaddr*)&caddr, &len); //block for client conn
-  if(csd<0) {
-	   perror("accept");
-  }
+if(csd<0) {
+   perror("accept");
+}
 printf("Got a client request from %s : %d\n", inet_ntoa(addr.sin_addr),ntohs(caddr.sin_port));
 
 close(csd);
