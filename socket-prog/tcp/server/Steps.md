@@ -70,6 +70,7 @@ if(rx_len < 0)
 {
    perror("recv");
 }
+printf("Client Says : %s\n", rx_buf);
 tx_len = send(csd, rx_buf, rx_len,0);
 if(tx_len < 0)
 {
