@@ -48,12 +48,12 @@ if(ret<0)
 ```
 char tx_buf[100],rx_buf[100];
 int tx_len, rx_len, max_len=100;
-tx_len = recv(csd, tx_buf, strlen(tx_buf), 0); 
+tx_len = sen(csd, tx_buf, strlen(tx_buf), 0); 
 if(tx_len < 0)
 {
    perror("send");
 }
-rx_len = send(csd, rx_buf, max_len,0);
+rx_len = recv(csd, rx_buf, max_len,0);
 if(rx_len < 0)
 {
    perror("recv");
