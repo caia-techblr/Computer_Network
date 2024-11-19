@@ -64,17 +64,17 @@ printf("Got a client request from %s : %d\n", inet_ntoa(addr.sin_addr),ntohs(cad
 #### Step-5 : Talk to client
 ```
 char rx_buf[100];
-  int nbytes, rx_len, tx_len, max_len=100;
-  rx_len = recv(csd, rx_buf, max_len, 0); 
-  if(rx_len < 0)
-  {
-      perror("recv");
-  }
-  tx_len = send(csd, rx_buf, rx_len,0);
-  if(tx_len < 0)
-  {
-      perror("send");
-  }
+int nbytes, rx_len, tx_len, max_len=100;
+rx_len = recv(csd, rx_buf, max_len, 0); 
+if(rx_len < 0)
+{
+   perror("recv");
+}
+tx_len = send(csd, rx_buf, rx_len,0);
+if(tx_len < 0)
+{
+   perror("send");
+}
 ```
 
 #### Step-6 : Close the sockets
