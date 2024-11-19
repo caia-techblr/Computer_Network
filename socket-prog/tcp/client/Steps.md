@@ -32,13 +32,12 @@ if(ret<0) {
 uint16_t server_port = 1800;
 char *server_ip = "127.0.0.1";
 
-struct sockaddr_in  saddr;
-saddr.sin_family = AF_INET;
-saddr.sin_port = htons(server_port);
-//caddr.sin_addr = inet_addr(server_ip);
-bzero(&saddr.sin_zero, sizeof(saddr.sin_zero));
+struct sockaddr_in  serv_addr;
+serv_addr.sin_family = AF_INET;
+serv_addr.sin_port = htons(server_port);
+bzero(&saddr.sin_zero, sizeof(serv_addr.sin_zero));
 
-ret = connect(csd, &saddr, sizeof(saddr));
+ret = connect(csd, &serv_addr, sizeof(serv_addr));
 if(ret<0)
 {
    perror("connect");
